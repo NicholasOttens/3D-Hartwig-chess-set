@@ -1185,6 +1185,33 @@ tfoot th:last-child   { background-position: right bottom; background-size: 332%
 #app[data-theme="marble"] tbody tr:nth-child(even)
                         .square:nth-child(odd)      { background-image: url(../img/marble-square-white.png); }
 
+
+/* ---------------------------------------------------------------------------------------------------- marble textures */
+
+#app[data-theme="myTheme"]                             {background-image: linear-gradient(to right, #FF432F, #00A2FF );}
+#app[data-theme="myTheme"] #scene                    { background: url(../img/redblue.png) no-repeat center center black; background-size: cover;}
+#app[data-theme="myTheme"] th                        { background-image: url(../img/marble-frame.png); }
+#app[data-theme="myTheme"][data-frame="off"] #board:after, 
+#app[data-theme="myTheme"][data-frame="off"] #frame:after, 
+#app[data-theme="myTheme"][data-frame="off"] #frame:before 
+                                                    { background-image: url(../img/marble-frame-border-off.png); }
+#app[data-theme="myTheme"][data-frame="on"] #board:after, 
+#app[data-theme="myTheme"][data-frame="on"] #frame:after, 
+#app[data-theme="myTheme"][data-frame="on"] #frame:before  
+                                                    { background-image: url(../img/marble-frame-border.png); }
+#app[data-theme="myTheme"] .square                   { background-image: url(../img/blue\ marble.png) }
+#app[data-theme="myTheme"] .white .poly > div,
+.set-theme[data-theme="myTheme"] .cube,
+.set-theme[data-theme="myTheme"] .cube:before,
+.set-theme[data-theme="myTheme"] .cube:after           { background-color: #FF432F; }
+#app[data-theme="myTheme"] .black .poly > div          { background-color: #00A2FF; }
+#app[data-theme="myTheme"] .black .poly .sphere        { background: -webkit-radial-gradient(center, ellipse cover, rgba(0,162,255,1) 30%,rgba(0,89,141,1) 100%) 0em -1em; }
+#app[data-theme="myTheme"] .white .poly .sphere        { background: -webkit-radial-gradient(center, ellipse cover, rgba(255,67,47,1) 30%,rgba(141,36,25,1) 100%) 0em -1em; }
+#app[data-theme="myTheme"] tbody tr:nth-child(odd)
+                        .square:nth-child(even), 
+#app[data-theme="myTheme"] tbody tr:nth-child(even)
+                        .square:nth-child(odd)      { background-image: url(../img/red\ marblr.png); }
+
 /* ---------------------------------------------------------------------------------------------------- flat */
 
 #app[data-theme="flat"]                             { background-color: #E5E3DF; color: #303132; }
